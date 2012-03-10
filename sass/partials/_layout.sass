@@ -1,0 +1,44 @@
+html, body
+  height: 100%
+  +reset-box-model
+
+.wrapper
+  min-height: 100%
+  height: auto !important
+  height: 100%
+  margin: 0 auto 0 - $sticky-footer
+
+.container
+  +container
+  // +susy-grid-background
+
+footer[role="contentinfo"], .push
+  height: $sticky-footer
+  +pie-clearfix
+
+header[role="banner"],
+.navigation,
+footer[role="contentinfo"]
+  .container > *:first-child
+    +full
+
+header[role="banner"],
+footer[role="contentinfo"]
+  .container > *:first-child
+    padding-bottom: $gutter-width / 2
+    padding-top: $gutter-width / 2
+
+
+
+.layout-full
+  div[role="main"]
+    +full
+
+.layout-sidebar
+  .sidebar
+    +columns(3)
+    +alpha
+
+  div[role="main"]
+    +columns(9)
+    +omega

@@ -1,0 +1,39 @@
+
+// Visually hidden, but available for screen readers.
+//------------------------------------------------------------------------------
+// Used for information required for screen-reader users to understand and use
+// the site where visual display is undesirable. Information provided in this
+// manner should be kept concise, to avoid unnecessary burden on the user.
+// !important is used to prevent unintentional overrides.
+
+=visually-hidden
+  border: 0
+  clip: rect(1px 1px 1px 1px) // IE6, IE7
+  clip: rect(1px, 1px, 1px, 1px)
+  height: 1px
+  margin: -1px
+  overflow: hidden
+  padding: 0
+  position: absolute !important
+  width: 1px
+
+
+// Visually hidden, but available to screenreaders and keyboard navigation.
+//------------------------------------------------------------------------------
+// The .element-focusable class extends the .element-invisible class to allow
+// the element to be focusable when navigated to via the keyboard. This is
+// typically used for skip links.
+
+=visually-hidden-focusable
+  clip: auto
+  height: auto
+  margin: 0
+  overflow: visible
+  position: static !important
+  width: auto
+
+
+// Reset line height
+//------------------------------------------------------------------------------
+=reset-line-height
+  line-height: $line-height

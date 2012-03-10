@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="layout-full">
+<head>
+   <meta charset="utf-8">
+   <title>{{ page.title }}</title>
+   <script src="http://use.typekit.com/msd6hyy.js"></script>
+   <script>try{Typekit.load();}catch(e){}</script>
+   <link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css?{{ site.time | date: '%Y%m%d%H%M%S' }}" media="screen">
+   <link rel="stylesheet" href="{{ site.baseurl }}/css/components.css?{{ site.time | date: '%Y%m%d%H%M%S' }}" media="screen">
+</head>
+<body>
+  <div class="wrapper">
+    <header role="banner">
+      <div class="container">
+        <hgroup>
+          <h1><a href="{{ site.baseurl }}/index.html" rel="home">Standard Components</a></h1>
+          <h2>A draft of proposed components and coding standards for Drupal 8.</h2>
+        </hgroup>
+      </div>
+    </header>
+    <div class="main container">
+      <div class="content" role="main"> {{ content }} </div>
+    </div>
+    <div class="push"></div>
+  </div>
+  <footer role="contentinfo">
+    <div class="container">
+      <p>Made by <a href="http://twitter.com/jacine">Jacine Luisi</a>. Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>. <a href="http://github.com/jacine/drupal">Source code</a>.</p>
+    </div>
+  </footer>
+  <a id="github" href="https://github.com/jacine/drupal">
+    <span>Fork me on GitHub!</span>
+    <span>Spread the love!</span>
+  </a>
+</body>
+</html>
