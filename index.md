@@ -1,11 +1,7 @@
 ---
-layout: sidebar
-title: Proposed Theming Standards and Components
+layout: post
+title: Definitions
 ---
-
-# Definitions
-
-<small class="note">This is still very much a work in progress.</small>
 
 ## Structure
 

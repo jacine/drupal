@@ -18,8 +18,16 @@
         </hgroup>
       </div>
     </header>
+    <nav role="navigation" class="main-navigation">
+      <div class="container">
+        {% include navigation-main.html %}
+      </div>
+    </nav>
     <div class="main container">
-      <div class="content" role="main"> {{ content }} </div>
+      <div class="content" role="main">
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+      </div>
     </div>
     <div class="push"></div>
   </div>

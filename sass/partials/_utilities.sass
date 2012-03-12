@@ -37,3 +37,37 @@
 //------------------------------------------------------------------------------
 =reset-line-height
   line-height: $line-height
+
+
+// Override +link-colors mixin.
+// @see http://compass-style.org/reference/compass/typography/links/link_colors/
+//------------------------------------------------------------------------------
+=link-colors($normal, $hoverfocus: false, $active: false)
+  &, &:visited
+    color: $normal
+  @if $hoverfocus
+    &:hover, &:focus
+      color: $hoverfocus
+  @if $active
+    &:active, &.active
+      color: $active
+
+
+// Overrides Compass' +inline-block-list-item.
+// @see http://compass-style.org/reference/compass/typography/lists/inline-block-list/
+//------------------------------------------------------------------------------
+=inline-block-list-item($margin: false)
+  +no-bullet
+  +inline-block
+  @if $margin
+    margin:
+      left: $margin
+      right: $margin
+
+// Overrides Compass' +horizontal-list-container.
+// @see http://compass-style.org/reference/compass/typography/lists/horizontal_list/
+//------------------------------------------------------------------------------
+=horizontal-list-container
+  margin: 0
+  padding: 0
+  +pie-clearfix

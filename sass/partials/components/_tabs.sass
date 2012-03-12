@@ -1,0 +1,22 @@
+@import partials/base
+
+ul.tabs
+  +pie-clearfix
+  +inline-block-list
+  margin: 1em 0
+  li.active
+    background-color: $active-background
+    color: $active
+  a.active
+    color: $active
+
+.primary
+  border-bottom: 1px solid $borders
+  li
+    border: 1px solid $tab-border
+    border-bottom: 0
+  a
+    background-color: $tab-background
+    +inline-block
+    padding: 4px 1em
+
