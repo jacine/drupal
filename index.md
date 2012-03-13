@@ -25,4 +25,4 @@ Formats consist of HTML markup defined by the spec. See examples of this in the 
 
 ## Patterns
 
-Patterns are usually groups of formats or custom UI elements.
+Patterns are usually a combination of contents and formats that make up custom UI components. They tend to have recommended use cases for application and their implementation can vary from a CSS and JavaScript standpoint (where applicable), but their markup is usually pretty standard.

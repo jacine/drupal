@@ -4,16 +4,15 @@ title: "Definition Lists"
 categories: [formats]
 ---
 
+{% include markup/definition-list.html %}
+
 {% highlight php %}
 <dl<?php print $attributes; ?>>
   <?php foreach ($items as $item): ?>
     <dt><?php print render($item['title']); ?></dt>
     <dd><?php print render($item); ?></dd>
   <?php endforeach; ?>
-</dl>
-{% endhighlight %}
-
-{% include markup/definition-list.html %}
+</dl>{% endhighlight %}
 
 <details>
 <summary>Data Structure</summary>

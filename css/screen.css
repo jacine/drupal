@@ -145,10 +145,6 @@ dl:only-child {
   margin: 0;
 }
 
-dt {
-  font-weight: bold;
-}
-
 dd {
   margin: 0 0 0 1em;
 }
@@ -673,7 +669,7 @@ li {
   margin-left: 34px;
 }
 
-dt {
+.post dt {
   font-size: 1.125em;
   font-weight: normal;
   color: #dc322f;

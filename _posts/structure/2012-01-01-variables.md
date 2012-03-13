@@ -23,9 +23,3 @@ categories: [structure]
   <dd>Contains information about the context.</dd>
 </dl>
 
-## Hierarchy
-
-- `$prepend`
-- `$content`
-    - `$item` or `$items`
-- `$append`
