@@ -23,6 +23,6 @@ Formats consist of HTML markup defined by the spec. See examples of this in the 
 3. They are variants (like theme hook suggestions) of <a href="{{ site.baseurl }}/item">item(s)</a>.
 4. They can optionally use containers.
 
-## Patterns
+## Components
 
-Patterns are usually a combination of contents and formats that make up custom UI components. They tend to have recommended use cases for application and their implementation can vary from a CSS and JavaScript standpoint (where applicable), but their markup is usually pretty standard.
+Components are usually a combination of contents and formats that make up custom UI elements. They tend to have recommended use cases for application and their implementation can vary from a CSS and JavaScript standpoint (where applicable), but their markup is usually pretty standard.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Vertical Tabs"
-categories: [patterns]
+category: components
 ---
 
 {% highlight php %}

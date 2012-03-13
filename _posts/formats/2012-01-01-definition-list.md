@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Definition Lists"
-categories: [formats]
+category: formats
 ---
 
-{% include markup/definition-list.html %}
+{% include examples/definition-list.html %}
 
 {% highlight php %}
 <dl<?php print $attributes; ?>>

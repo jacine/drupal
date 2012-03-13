@@ -3,8 +3,18 @@ layout: default
 title: "Demo"
 ---
 
-{% include markup/tabs.html %}
+<section id="formats">
+  <h2>Formats</h2>
+  {% include examples/definition-list.html %}
+  {% include examples/input-checkbox.html %}
+  {% include examples/input-color.html %}
+  {% include examples/input-date.html %}
+  {% include examples/input-email.html %}
+</section>
 
-{% include markup/breadcrumbs.html %}
-
-{% include markup/definition-list.html %}
+<section id="components">
+  <h2>Components</h2>
+  {% include examples/breadcrumbs.html %}
+  {% include examples/pagination.html %}
+  {% include examples/tabs.html %}
+</section>

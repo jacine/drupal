@@ -1,8 +1,10 @@
 ---
 layout: post
 title: "Pagination"
-categories: [patterns]
+category: components
 ---
+
+{% include examples/pagination.html %}
 
 ## Can use:
 

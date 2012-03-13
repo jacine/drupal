@@ -1,0 +1,25 @@
+
+ul.pager
+  border-radius: 3px
+  +clearfix
+  +no-bullets
+  line-height: 2
+  margin: 1em 0
+  padding-left: 0
+
+.pager li
+  border: solid 1px $borders
+  border-left-width: 0
+  float: left
+  margin: 0
+  padding: 0
+  &:first-child
+    border-left-width: 1px
+
+.pager a,
+.pager .current
+  padding: 0 1em
+
+.pager a
+  text-decoration: none
+  display: inline-block

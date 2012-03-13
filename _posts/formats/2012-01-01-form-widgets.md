@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Form Widgets"
-categories: [formats]
+category: formats
 ---
 
 These will all use <a href="{{ site.baseurl }}/container">containers</a>.

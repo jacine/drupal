@@ -1,17 +1,26 @@
 ---
 layout: post
 title: "Form Inputs"
-categories: [formats]
+category: formats
 ---
 
-Some of these will use <a href="{{ site.baseurl }}/container">containers</a> by default.
+Some of these will use <a href="{{ site.baseurl }}/structure/container">containers</a> by default.
 
-<small>@todo group these better based on [this](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-input-element.html#the-input-element).</small>
+## Buttons
 
-- button
-- checkbox
-- color
-- date
+<button type="button">Button</button>
+<input type="submit" value="Submit">
+
+## Input
+
+<ul class="unstyled">
+  <li>{% include examples/input-email.html %}</li>
+  <li>{% include examples/input-checkbox.html %}</li>
+  <li>{% include examples/input-color.html %}</li>
+  <li>{% include examples/input-date.html %}</li>
+</ul>
+
+
 - datetime
 - datetime-local
 - email

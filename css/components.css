@@ -28,6 +28,10 @@
   padding-right: 0;
 }
 
+label {
+  display: block;
+}
+
 ul.tabs {
   *zoom: 1;
   margin: 0;
@@ -84,4 +88,40 @@ ul.tabs a.active {
 }
 .primary a {
   *display: inline;
+}
+
+ul.pager {
+  border-radius: 3px;
+  overflow: hidden;
+  *zoom: 1;
+  list-style: none;
+  line-height: 2;
+  margin: 1em 0;
+  padding-left: 0;
+}
+ul.pager li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.pager li {
+  border: solid 1px #eeeeee;
+  border-left-width: 0;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.pager li:first-child {
+  border-left-width: 1px;
+}
+
+.pager a,
+.pager .current {
+  padding: 0 1em;
+}
+
+.pager a {
+  text-decoration: none;
+  display: inline-block;
 }

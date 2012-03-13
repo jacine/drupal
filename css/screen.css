@@ -654,7 +654,7 @@ h1 {
   font-weight: 400;
 }
 [role="main"] h1 {
-  border-bottom: 1px solid #eee8d5;
+  border-bottom: 1px solid #eeeeee;
 }
 
 pre, code {
@@ -682,6 +682,15 @@ summary {
 
 small {
   color: #657b83;
+}
+
+ul.unstyled {
+  list-style: none;
+}
+ul.unstyled li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
 }
 
 ::-moz-selection {
@@ -761,7 +770,8 @@ header[role="banner"] h1, header[role="banner"] h2 {
 
 footer[role="contentinfo"] {
   background-color: #eeeeee;
-  border-top: 1px solid rgba(147, 161, 161, 0.25);
+  border-top: 1px solid rgba(238, 238, 238, 0.25);
+  font-size: 0.875rem;
 }
 
 [role="main"], .sidebar nav {
@@ -770,8 +780,8 @@ footer[role="contentinfo"] {
 }
 
 .sidebar nav {
-  background-color: #f7f7f7;
-  border: 1px solid rgba(147, 161, 161, 0.25);
+  background-color: #f8f8f8;
+  border: 1px solid #eeeeee;
   border-radius: 3px;
   padding: 20px;
   height: 100%;
@@ -807,27 +817,26 @@ footer[role="contentinfo"] {
   list-style: disc;
 }
 
-figure.example {
-  background: white;
-  border: 1px solid #2aa198;
+.example details {
+  margin-top: 1em;
+}
+.example summary {
+  font-size: 0.875rem;
+}
+
+figure {
+  background-color: #f8f8f8;
+  border: 1px solid #eeeeee;
+  padding: 16px;
   margin: 34px 0;
-  padding: 68px 34px 34px 34px;
-  position: relative;
 }
 
 figcaption {
-  background-color: #2aa198;
-  color: white;
-  padding: 4px 16px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-}
-figcaption {
-  *display: inline;
+  color: #586e75;
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
 }

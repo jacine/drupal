@@ -33,7 +33,7 @@ h1
   font-size: 2.5em
   font-weight: 400
   [role="main"] &
-    border-bottom: 1px solid $base2
+    border-bottom: 1px solid $borders
 
 pre, code
   font-size: 0.875em
@@ -55,6 +55,9 @@ summary
 
 small
   color: $base00
+
+ul.unstyled
+  +no-bullets
 
 ::-moz-selection
   background: $cyan
@@ -110,7 +113,8 @@ header[role="banner"]
 
 footer[role="contentinfo"]
   background-color: #eee
-  border-top: 1px solid rgba($base1, 0.25)
+  border-top: 1px solid rgba($borders, 0.25)
+  font-size: 0.875rem
 
 [role="main"], .sidebar nav
   margin-top: $gutter-width
@@ -122,8 +126,8 @@ footer[role="contentinfo"]
 
 .sidebar
   nav
-    background-color: #f7f7f7
-    border: 1px solid rgba($base1, 0.25)
+    background-color: #f8f8f8
+    border: 1px solid $borders
     border-radius: 3px
     padding: 20px
     height: 100%
@@ -144,19 +148,25 @@ footer[role="contentinfo"]
 
 // Examples
 //------------------------------------------------------------------------------
-figure.example
-  background: #fff
-  border: 1px solid $cyan
+
+.example
+  details
+    margin-top: 1em
+  summary
+    font-size: 0.875rem
+figure
+  background-color: #f8f8f8
+  border: 1px solid $borders
+  padding: 16px
   margin: 34px 0
-  padding: 68px 34px 34px 34px
-  position: relative
-
 figcaption
-  background-color: $cyan
-  color: #fff
-  padding: 4px 16px
-  position: absolute
-  top: 0
-  left: 0
-  +inline-block
+  color: $base01
+  font-family: $headings
+  font-size: 0.75rem
+  font-weight: bold
+  letter-spacing: .1em
+  margin-bottom: 1em
+  text-transform: uppercase
 
+.layout-full details
+  // display: none

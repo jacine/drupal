@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Form elements"
-categories: [formats]
+category: formats
 ---
 
 ## Form Elements

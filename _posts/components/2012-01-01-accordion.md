@@ -1,5 +1,5 @@
 ---
 layout: post
 title: "Accordion"
-categories: [patterns]
+category: components
 ---
