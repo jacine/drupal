@@ -1,0 +1,14 @@
+<figure class="example format">
+  <figcaption>Heading `item__heading.tpl.php`</figcaption>
+{% highlight php %}
+<?php print render($items['append']); ?>
+
+<?php foreach ($items as $item): ?>
+  <<?php print $item['tag']; ?><?php print $item['attributes']; ?>>
+    <?php print render($item); ?>
+  </<?php print $item['tag']; ?>>
+<?php endforeach; ?>
+
+<?php print render($items['prepend']); ?>
+{% endhighlight %}
+</figure>

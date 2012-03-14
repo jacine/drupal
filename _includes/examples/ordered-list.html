@@ -1,0 +1,8 @@
+<figure class="example format">
+  <figcaption>Ordered List `item__list__ordered`</figcaption>
+{% highlight php %}<ol<?php print $items['attributes']; ?>>
+  <?php foreach ($items as $item): ?>
+    <li<?php print $item['attributes']; ?>><?php print render($item); ?></li>
+  <?php endforeach; ?>
+</ol>{% endhighlight %}
+</figure>

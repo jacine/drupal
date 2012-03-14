@@ -1,0 +1,11 @@
+<figure class="example format">
+  <figcaption>Figure  `item--figure.tpl.php`</figcaption>
+{% highlight php %}
+<?php foreach ($items as $item): ?>
+  <figure<?php print $attributes; ?>>
+    <figcaption><?php print render($item['title']); ?></figcaption>
+    <?php print render($item); ?>
+  </figure>
+<?php endforeach; ?>
+{% endhighlight %}
+</figure>

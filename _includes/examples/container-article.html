@@ -1,0 +1,17 @@
+<figure class="example structure">
+  <figcaption>Container / Article  `container--article.tpl.php`</figcaption>
+{% highlight php %}
+<article<?php print $attributes; ?>>
+  <?php print render($prepend); ?>
+  <footer>
+    <?php print render($content['heading']); ?>
+    <?php print render($content['submitted']); ?>
+    <?php print render($content['user_picture']); ?>
+  </footer>
+  <?php print render($content['photo']); ?>
+  <?php print render($content); ?>
+  <?php print render($content['links']); ?>
+  <?php print render($append); ?>
+</article>
+{% endhighlight %}
+</figure>

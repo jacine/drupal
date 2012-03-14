@@ -19,8 +19,11 @@ a
   &:hover
     text-decoration: none
 
-p:only-child
-  margin: 0
+p
+  &:first-child
+    margin-top: 0
+  &:only-child
+    margin: 0
 
 #{headings()}
   font-family: $headings
@@ -30,16 +33,24 @@ p:only-child
     margin-top: 0
 
 h1
-  font-size: 2.5em
+  font-size: 2.5rem
   font-weight: 400
   [role="main"] &
     border-bottom: 1px solid $borders
 
 pre, code
-  font-size: 0.875em
+  font-size: 0.875rem
 
 code
   background-color: #eee
+  border-radius: 3px
+  color: $text
+  font-weight: normal
+  letter-spacing: none
+  line-height: 1
+  padding: 3px
+  text-shadow: none
+  text-transform: none
 
 li
   margin-left: $gutter-width
@@ -166,7 +177,10 @@ figcaption
   font-weight: bold
   letter-spacing: .1em
   margin-bottom: 1em
+  text-shadow: 1px 0 3px #fff
   text-transform: uppercase
-
-.layout-full details
-  // display: none
+  code
+    background: transparent
+    font-size: 0.75rem
+    margin-top: 0
+    float: right
