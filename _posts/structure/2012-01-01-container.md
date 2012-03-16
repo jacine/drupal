@@ -10,6 +10,7 @@ In Drupal 7, we have many different templates, theme functions and render proper
 
 
 ### Default container
+
 A simple example that would work for most entities and blocks.
 
 {% include examples/container.html %}
