@@ -1,0 +1,36 @@
+.contextual-region
+  position: relative
+
+.contextual,
+.contextual-links
+  position: absolute
+
+.contextual
+  top: 1em
+  right: 1em
+  .trigger
+    +icon-sprite(cog-gray, false, 6px, 6px)
+    border: solid 1px #fff
+    display: block
+    overflow: hidden
+    position: relative
+    text-indent: 100%
+    width: 34px
+    height: 34px
+    z-index: 1
+
+.contextual-active .trigger
+  border-color: #ddd
+  border-bottom-color: #fff
+  border-radius: 3px
+
+ul.contextual-links
+  +no-bullets
+  border: 1px solid #ddd
+  border-radius: 3px
+  display: none
+  position: absolute
+  padding: 3px 8px
+  top: 33px
+  right: 0
+

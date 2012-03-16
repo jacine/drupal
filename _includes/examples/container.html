@@ -1,11 +1,31 @@
-<figure class="example structure">
-  <figcaption>Container  `container.tpl.php`</figcaption>
-{% highlight php %}
-<article<?php print $content['attributes']; ?>>
-  <?php print render($content['append']); ?>
-  <?php print render($content['heading']); ?>
-  <?php print render($content); ?>
-  <?php print render($content['prepend']); ?>
-</article>
+<figure class="example structure" id="container">
+  <figcaption>Container <code>container</code></figcaption>
+  <div class="module">
+    <div class="container entity" id="unique-id">
+      <h1>Title</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a dolor sed dolor vehicula fermentum. Nulla ac est a purus consequat luctus vitae vel erat.</p>
+      <p>Praesent nec urna tellus. In quis nisl id sem laoreet dignissim. Etiam ac tellus neque, nec sodales nisi. Sed erat metus, ultricies quis convallis sit amet, mollis sit amet risus.</p>
+    </div>
+  </div>
+<details>
+  <summary>HTML Source</summary>
+{% highlight html %}
+<div class="container entity" id="unique-id">
+  <h1>Title</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a dolor sed dolor vehicula fermentum. Nulla ac est a purus consequat luctus vitae vel erat.</p>
+  <p>Praesent nec urna tellus. In quis nisl id sem laoreet dignissim. Etiam ac tellus neque, nec sodales nisi. Sed erat metus, ultricies quis convallis sit amet, mollis sit amet risus.</p>
+</div>
 {% endhighlight %}
+</details>
+<details>
+  <summary>PHP source</summary>
+{% highlight php %}
+<div<?php print $attributes; ?>>
+  <?php print render($prepend); ?>
+  <?php print render($content['title']); ?>
+  <?php print render($content); ?>
+  <?php print render($append); ?>
+</div>
+{% endhighlight %}
+</details>
 </figure>

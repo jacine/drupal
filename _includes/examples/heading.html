@@ -1,14 +1,26 @@
-<figure class="example format">
-  <figcaption>Heading `item__heading.tpl.php`</figcaption>
-{% highlight php %}
-<?php print render($items['append']); ?>
-
+<figure class="example format" id="item-heading">
+<figcaption>Heading <code>item__heading</code></figcaption>
+<div class="module">
+  [contextual]
+  <h1>Title</h1>
+  [shortcut]
+</div>
+<details>
+  <summary>HTML source</summary>
+{% highlight html %}
+[contextual]
+<h1>Title</h1>
+[shortcut]
+{% endhighlight %}
+</details>
+<details>
+  <summary>PHP source</summary>
+  {% highlight php %}
 <?php foreach ($items as $item): ?>
   <<?php print $item['tag']; ?><?php print $item['attributes']; ?>>
     <?php print render($item); ?>
   </<?php print $item['tag']; ?>>
 <?php endforeach; ?>
-
-<?php print render($items['prepend']); ?>
 {% endhighlight %}
+</details>
 </figure>

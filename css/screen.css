@@ -1,3 +1,7 @@
+.icon-sprite {
+  background: url('../img/icon-s51aaacf5fd.png') no-repeat;
+}
+
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -656,7 +660,7 @@ h1 {
   font-size: 2.5rem;
   font-weight: 400;
 }
-[role="main"] h1 {
+[role="main"] > h1 {
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -828,33 +832,46 @@ footer[role="contentinfo"] {
   list-style: disc;
 }
 
-.example details {
-  margin-top: 1em;
-}
-.example summary {
-  font-size: 0.875rem;
-}
-
-figure {
-  background-color: #f8f8f8;
+.example {
   border: 1px solid #eeeeee;
-  padding: 16px;
+  padding: 0;
   margin: 34px 0;
 }
-
-figcaption {
-  color: #586e75;
+.example > figcaption {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #eeeeee;
+  color: #415358;
   font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
   font-size: 0.75rem;
   font-weight: bold;
   letter-spacing: 0.1em;
-  margin-bottom: 1em;
+  padding: 8px;
   text-shadow: 1px 0 3px white;
   text-transform: uppercase;
 }
-figcaption code {
+.example > figcaption > code {
   background: transparent;
   font-size: 0.75rem;
   margin-top: 0;
   float: right;
+}
+.example details {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 0;
+  padding: 0;
+}
+.example summary {
+  background-color: #f8f8f8;
+  border-top: 1px solid #eeeeee;
+  color: #415358;
+  font-size: 0.813rem;
+  padding: 0.5rem;
+}
+.example pre {
+  margin: 0;
+}
+
+.module {
+  padding: 1rem;
 }

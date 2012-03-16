@@ -1,0 +1,25 @@
+<figure class="example structure" id="item">
+  <figcaption>Item <code>item</code></figcaption>
+  <div class="module">
+    <a href="#">one</a>
+    <a href="#">two</a>
+    <a href="#">three</a>
+  </div>
+<details>
+  <summary>HTML source</summary>
+{% highlight html %}
+<a href="#">one</a>
+<a href="#">two</a>
+<a href="#">three</a>
+{% endhighlight %}
+</details>
+<details>
+  <summary>PHP source</summary>
+{% highlight php %}
+<?php foreach ($items as $item): ?>
+  <?php print render($items); ?>
+<?php endforeach; ?>
+{% endhighlight %}
+</details>
+</figure>
+

@@ -35,7 +35,7 @@ p
 h1
   font-size: 2.5rem
   font-weight: 400
-  [role="main"] &
+  [role="main"] > &
     border-bottom: 1px solid $borders
 
 pre, code
@@ -161,26 +161,37 @@ footer[role="contentinfo"]
 //------------------------------------------------------------------------------
 
 .example
-  details
-    margin-top: 1em
-  summary
-    font-size: 0.875rem
-figure
-  background-color: #f8f8f8
   border: 1px solid $borders
-  padding: 16px
+  padding: 0
   margin: 34px 0
-figcaption
-  color: $base01
-  font-family: $headings
-  font-size: 0.75rem
-  font-weight: bold
-  letter-spacing: .1em
-  margin-bottom: 1em
-  text-shadow: 1px 0 3px #fff
-  text-transform: uppercase
-  code
-    background: transparent
+  > figcaption
+    background-color: #f8f8f8
+    border-bottom: 1px solid $borders
+    color: $base01
+    font-family: $headings
     font-size: 0.75rem
-    margin-top: 0
-    float: right
+    font-weight: bold
+    letter-spacing: .1em
+    padding: 8px
+    text-shadow: 1px 0 3px #fff
+    text-transform: uppercase
+    > code
+      background: transparent
+      font-size: 0.75rem
+      margin-top: 0
+      float: right
+  details
+    +clearfix
+    margin: 0
+    padding: 0
+  summary
+    background-color: #f8f8f8
+    border-top: 1px solid $borders
+    color: $base01
+    font-size: 0.813rem
+    padding: 0.5rem
+  pre
+    margin: 0
+
+.module
+  padding: 1rem

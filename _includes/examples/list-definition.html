@@ -1,0 +1,127 @@
+<figure class="example formats" id="item-list-definition">
+<figcaption>Definition list <code>item__list_definition</code></figcaption>
+<div class="module">
+  <dl>
+    <dt>Example one</dt>
+    <dd>Lorem ipsum Dolor sit amet, consectetur adipiscing elit.</dd>
+    <dt>Example two</dt>
+    <dd>
+      <ul>
+        <li>Cras sit amet dolor sit amet nunc congue luctus ultrices vitae quam.</li>
+        <li>In eu augue lectus, sit amet scelerisque magna.</li>
+      </ul>
+    </dd>
+    <dt>Example three</dt>
+    <dd>Maecenas sit amet erat a arcu pellentesque rhoncus sit amet in ipsum.</dd>
+    <dd>Vestibulum vitae leo vitae enim tempus euismod at quis mi.</dd>
+    <dt>Example four</dt>
+    <dd>
+      <dl>
+        <dt>Nested Example One</dt>
+        <dd>Vestibulum a augue leo, sit amet faucibus nunc.</dd>
+        <dd>Ut quis nibh eget nunc tristique consectetur vel volutpat elit.</dd>
+      </dl>
+      <h3>Nested Example Two</h3>
+      <ul>
+        <li>Vestibulum a augue leo, sit amet faucibus nunc.</li>
+        <li>Ut quis nibh eget nunc tristique consectetur vel volutpat elit.</li>
+      </ul>
+    </dd>
+  </dl>
+</div>
+<details>
+<summary>HTML source</summary>
+{% highlight html %}
+<dl>
+  <dt>Example one</dt>
+  <dd>Lorem ipsum Dolor sit amet, consectetur adipiscing elit.</dd>
+  <dt>Example two</dt>
+  <dd>
+    <ul>
+      <li>Cras sit amet dolor sit amet nunc congue luctus ultrices vitae quam.</li>
+      <li>In eu augue lectus, sit amet scelerisque magna.</li>
+    </ul>
+  </dd>
+  <dt>Example three</dt>
+  <dd>Maecenas sit amet erat a arcu pellentesque rhoncus sit amet in ipsum.</dd>
+  <dd>Vestibulum vitae leo vitae enim tempus euismod at quis mi.</dd>
+  <dt>Example four</dt>
+  <dd>
+    <dl>
+      <dt>Nested Example One</dt>
+      <dd>Vestibulum a augue leo, sit amet faucibus nunc.</dd>
+      <dd>Ut quis nibh eget nunc tristique consectetur vel volutpat elit.</dd>
+    </dl>
+    <h3>Nested Example Two</h3>
+    <ul>
+      <li>Vestibulum a augue leo, sit amet faucibus nunc.</li>
+      <li>Ut quis nibh eget nunc tristique consectetur vel volutpat elit.</li>
+    </ul>
+  </dd>
+</dl>
+{% endhighlight %}
+</details>
+<details>
+  <summary>PHP source</summary>
+{% highlight php %}
+<dl<?php print $attributes; ?>>
+  <?php foreach ($items as $item): ?>
+    <dt><?php print render($item['title']); ?></dt>
+    <dd><?php print render($item); ?></dd>
+  <?php endforeach; ?>
+</dl>{% endhighlight %}
+</details>
+
+<details>
+<summary>Data Structure</summary>
+{% highlight php %}<?php
+// The default type = 'item'.
+$data = array(
+  'format' => 'definition_list',
+  'items' => array(
+    array(
+      'title' => 'Example one',
+      'items' => array('Lorem ipsum Dolor sit amet, consectetur adipiscing elit.'),
+    ),
+    array(
+      'title' => 'Example two',
+      'items' => array(
+        'format' => 'list',
+        'items' = array(
+          'Cras sit amet dolor sit amet nunc congue luctus ultrices vitae quam.',
+          'In eu augue lectus, sit amet scelerisque magna.',
+        ),
+      ),
+    ),
+    array(
+      'title' => 'Example three',
+      'items' => array(
+        'Maecenas sit amet erat a arcu pellentesque rhoncus sit amet in ipsum.',
+        'Vestibulum vitae leo vitae enim tempus euismod at quis mi.',
+      ),
+    ),
+    array(
+      'title' => 'Example four',
+      'items' => array(
+        array(
+          'format' => 'definition_list',
+          'title' => 'Nested Example One',
+          'items' => array(
+            'Vestibulum a augue leo, sit amet faucibus nunc.',
+            'Ut quis nibh eget nunc tristique consectetur vel volutpat elit.',
+          ),
+        ),
+        array(
+          'format' => 'list',
+          'title' => 'Nested Example Two',
+          'items' => array(
+            'Vestibulum a augue leo, sit amet faucibus nunc.',
+            'Ut quis nibh eget nunc tristique consectetur vel volutpat elit.',
+          ),
+        ),
+      ),
+    ),
+  ),
+);?>{% endhighlight %}
+</details>
+</figure>

@@ -3,17 +3,31 @@ layout: default
 title: "Demo"
 ---
 
+<section id="structure">
+  <h2>Structure</h2>
+  {% include examples/container.html %}
+  {% include examples/container-article.html %}
+  {% include examples/item.html %}
+</section>
+
 <section id="formats">
   <h2>Formats</h2>
-  {% include examples/definition-list.html %}
+  <section id="lists">
+    {% include examples/list.html %}
+    {% include examples/list-ordered.html %}
+    {% include examples/list-definition.html %}
+  </section>
+
   {% include examples/figure.html %}
   {% include examples/heading.html %}
-  {% include examples/input-checkbox.html %}
-  {% include examples/input-color.html %}
-  {% include examples/input-date.html %}
-  {% include examples/input-email.html %}
-  {% include examples/ordered-list.html %}
-  {% include examples/unordered-list.html %}
+
+  <section id="forms">
+    <h3>Forms</h3>
+    {% include examples/input-checkbox.html %}
+    {% include examples/input-color.html %}
+    {% include examples/input-date.html %}
+    {% include examples/input-email.html %}
+  </section>
 </section>
 
 <section id="components">

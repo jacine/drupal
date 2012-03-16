@@ -1,3 +1,87 @@
+.icon-sprite, .contextual .trigger {
+  background: url('../img/icon-s51aaacf5fd.png') no-repeat;
+}
+
+.article .user-photo,
+.article .submitted {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+}
+.article .user-photo,
+.article .submitted {
+  *display: inline;
+}
+.article .submitted,
+.article .image {
+  font-size: 0.875rem;
+}
+.article .image {
+  border: solid 1px #eeeeee;
+  color: #415358;
+  float: right;
+  padding: 1rem;
+  margin: 1rem 0 0 1rem;
+  text-align: right;
+}
+.article details {
+  *zoom: 1;
+}
+.article details:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contextual-region {
+  position: relative;
+}
+
+.contextual,
+.contextual-links {
+  position: absolute;
+}
+
+.contextual {
+  top: 1em;
+  right: 1em;
+}
+.contextual .trigger {
+  background-position: 6px 6px;
+  border: solid 1px white;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-indent: 100%;
+  width: 34px;
+  height: 34px;
+  z-index: 1;
+}
+
+.contextual-active .trigger {
+  border-color: #dddddd;
+  border-bottom-color: white;
+  border-radius: 3px;
+}
+
+ul.contextual-links {
+  list-style: none;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  display: none;
+  position: absolute;
+  padding: 3px 8px;
+  top: 33px;
+  right: 0;
+}
+ul.contextual-links li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+
 .breadcrumbs {
   margin: 0;
   padding: 0;
@@ -26,10 +110,6 @@
 }
 .breadcrumbs li.last {
   padding-right: 0;
-}
-
-label {
-  display: block;
 }
 
 ul.tabs {
