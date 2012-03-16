@@ -1,13 +1,13 @@
 <figure class="example format" id="item-figure">
-  <figcaption>Figure <code>item__figure</code></figcaption>
-  <div class="module">
-    <figure class="image">
-    <img src="/drupal/img/whale-tail.jpg" alt="A whale with its tail in the air after jumping and diving back into the ocean.">
-    <figcaption>Whale watching off shore in Cape Cod, MA in 2008.</figcaption>
-  </figure>
-  </div>
+<figcaption>Figure <code>item__figure</code></figcaption>
+<div class="module">
+  <figure class="image">
+  <img src="/drupal/img/whale-tail.jpg" alt="A whale with its tail in the air after jumping and diving back into the ocean.">
+  <figcaption>Whale watching off shore in Cape Cod, MA in 2008.</figcaption>
+</figure>
+</div>
 <details>
-  <summary>HTML source</summary>
+<summary>HTML source</summary>
 {% highlight html %}
 <figure class="image">
   <img src="/drupal/img/whale-tail.jpg" alt="A whale with its tail in the air after jumping and diving back into the ocean.">
@@ -16,13 +16,13 @@
 {% endhighlight %}
 </details>
 <details>
-  <summary>PHP source</summary>
-  {% highlight php %}
+<summary>PHP source</summary>
+{% highlight php %}
 <?php foreach ($items as $item): ?>
-  <figure<?php print $attributes; ?>>
-    <?php print render($item); ?>
-    <figcaption><?php print render($item['title']); ?></figcaption>
-  </figure>
+<figure<?php print $attributes; ?>>
+  <?php print render($item); ?>
+  <figcaption><?php print render($item['title']); ?></figcaption>
+</figure>
 <?php endforeach; ?>
 {% endhighlight %}
 </details>

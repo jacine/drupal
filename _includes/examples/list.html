@@ -1,13 +1,12 @@
 <figure class="example format" id="item-list">
-  <figcaption>Unordered List <code>item__list</code></figcaption>
-  <div class="module">
-    <ul>
-      <li><a href="#">one</a></li>
-      <li><a href="#">two</a></li>
-      <li><a href="#">three</a></li>
-    </ul>
-  </div>
-
+<figcaption>Unordered List <code>item__list</code></figcaption>
+<div class="module">
+  <ul>
+    <li><a href="#">one</a></li>
+    <li><a href="#">two</a></li>
+    <li><a href="#">three</a></li>
+  </ul>
+</div>
 <details>
 <summary>HTML source</summary>
 {% highlight html %}
@@ -18,14 +17,13 @@
 </ul>
 {% endhighlight %}
 </details>
-
 <details>
 <summary>PHP source</summary>
 {% highlight php %}
 <ul<?php print $attributes; ?>>
-  <?php foreach ($items as $item): ?>
-    <li<?php print $item['attributes']; ?>><?php print render($item); ?></li>
-  <?php endforeach; ?>
+<?php foreach ($items as $item): ?>
+  <li<?php print $item['attributes']; ?>><?php print render($item); ?></li>
+<?php endforeach; ?>
 </ul>
 {% endhighlight %}
 </details>

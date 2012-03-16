@@ -4,6 +4,6 @@ title: "Definition Lists"
 category: formats
 ---
 
-{% include examples/definition-list.html %}
+{% include examples/list-definition.html %}
 
 

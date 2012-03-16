@@ -1,17 +1,27 @@
 ---
 layout: post
-title: "Form elements"
+title: "Form Inputs"
 category: formats
 ---
 
-## Form Elements
+{% include fork-me.html %}
 
-<small>@todo group these better based on [this](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-input-element.html#the-input-element).</small>
 
-- button
-- checkbox
-- color
-- date
+## Buttons
+
+<button type="button">Button</button>
+<input type="submit" value="Submit">
+
+## Input
+
+<ul class="unstyled">
+  <li>{% include examples/input-email.html %}</li>
+  <li>{% include examples/input-checkbox.html %}</li>
+  <li>{% include examples/input-color.html %}</li>
+  <li>{% include examples/input-date.html %}</li>
+</ul>
+
+
 - datetime
 - datetime-local
 - email
@@ -31,3 +41,5 @@ category: formats
 - time
 - url
 - week
+
+## Elements

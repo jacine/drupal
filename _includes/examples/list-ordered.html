@@ -1,31 +1,29 @@
 <figure class="example format" id="item-list-ordered">
-  <figcaption>Ordered List <code>item__list_ordered</code></figcaption>
-  <div class="module">
-    <ol>
-      <li><a href="#">one</a></li>
-      <li><a href="#">two</a></li>
-      <li><a href="#">three</a></li>
-    </ol>
-  </div>
-
-<details>
-<summary>HTML source</summary>
-{% highlight html %}
+<figcaption>Ordered List <code>item__list_ordered</code></figcaption>
+<div class="module">
 <ol>
   <li><a href="#">one</a></li>
   <li><a href="#">two</a></li>
   <li><a href="#">three</a></li>
 </ol>
+</div>
+<details>
+<summary>HTML source</summary>
+{% highlight html %}
+<ol>
+<li><a href="#">one</a></li>
+<li><a href="#">two</a></li>
+<li><a href="#">three</a></li>
+</ol>
 {% endhighlight %}
 </details>
-
 <details>
 <summary>PHP source</summary>
 {% highlight php %}
 <ol<?php print $attributes; ?>>
-  <?php foreach ($items as $item): ?>
-    <li<?php print $item['attributes']; ?>><?php print render($item); ?></li>
-  <?php endforeach; ?>
+<?php foreach ($items as $item): ?>
+  <li<?php print $item['attributes']; ?>><?php print render($item); ?></li>
+<?php endforeach; ?>
 </ol>
 {% endhighlight %}
 </details>
