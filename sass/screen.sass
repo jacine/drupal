@@ -195,3 +195,46 @@ footer[role="contentinfo"]
 
 .module
   padding: 1rem
+
+
+.fork-me
+  background-color: $red
+  color: #fff
+  padding: 1em
+  margin: 1em 0
+  a
+    +link-colors(#fff)
+    text-decoration: underline
+
+.main-navigation
+  position: relative
+
+.toggle-nav
+  display: none
+  +icon-sprite(toggle-nav, true)
+  min-height: 41px
+  +hide-text
+  position: absolute
+  right: 20px
+  top: 0
+  +respond-to(narrow)
+    display: block
+    &:hover
+      background-color: darken($blue, 25%)
+
+.layout-sidebar
+  +respond-to(narrow)
+    div.sidebar
+      display: none
+      margin: 0
+      width: 100%
+      nav
+        margin: 0
+        border-radius: 0
+    .sidebar, div[role="main"]
+      +full-width
+  +respond-to(wide)
+    div.sidebar
+      display: block
+
+

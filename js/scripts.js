@@ -35,6 +35,10 @@ $('div.contextual').once('contextual-links', function () {
   $wrapper.prepend($trigger);
 });
 
+ $('.toggle-nav').click(function() {
+  $('.sidebar').slideToggle('fast');
+  return false;
+});
 
 
 })(jQuery);

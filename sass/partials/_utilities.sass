@@ -71,3 +71,30 @@
   margin: 0
   padding: 0
   +pie-clearfix
+
+
+// Media Query Helper Mixin
+// See https://gist.github.com/1215856 + http://vimeo.com/32611202
+//------------------------------------------------------------------------------
+=respond-to($media)
+  @if $media == handhelds
+    @media only screen and (max-width: 479px)
+      @content
+  @else if $media == wide-handhelds
+    @media only screen and (min-width: 480px) and (max-width: 767px)
+      @content
+  @else if $media == tablets
+    @media only screen and (min-width: 768px) and (max-width: 959px)
+      @content
+  @if $media == narrow
+    @media only screen and (max-width: 768px)
+      @content
+  @if $media == wide
+    @media only screen and (min-width: 768px)
+      @content
+
+// Susy helper
+//------------------------------------------------------------------------------
+=full-width
+  +columns($total-cols)
+  +alpha
