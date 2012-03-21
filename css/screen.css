@@ -936,6 +936,9 @@ footer[role="contentinfo"] {
     margin-right: 3.263%;
     margin-left: 3.263%;
   }
+  .layout-sidebar #github {
+    display: none;
+  }
 }
 @media only screen and (min-width: 768px) {
   .layout-sidebar div.sidebar {
