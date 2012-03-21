@@ -35,9 +35,9 @@ $('div.contextual').once('contextual-links', function () {
   $wrapper.prepend($trigger);
 });
 
- $('.toggle-nav').click(function() {
+ $('.toggle-nav').click(function(e) {
+  e.preventDefault();
   $('.sidebar').slideToggle('fast');
-  return false;
 });
 
 

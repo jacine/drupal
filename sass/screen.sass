@@ -208,19 +208,21 @@ footer[role="contentinfo"]
 
 .main-navigation
   position: relative
-
-.toggle-nav
-  display: none
-  +icon-sprite(toggle-nav, true)
-  min-height: 41px
-  +hide-text
-  position: absolute
-  right: 20px
-  top: 0
-  +respond-to(narrow)
-    display: block
+  .toggle-nav
+    display: none
+    +icon-sprite(toggle-nav, true)
+    min-height: 41px
+    +hide-text
+    position: absolute
+    right: 20px
+    top: 0
     &:hover
       background-color: darken($blue, 25%)
+    +respond-to(wide)
+      display: none
+    +respond-to(narrow)
+      display: block
+
 
 .layout-sidebar
   +respond-to(narrow)
@@ -235,6 +237,6 @@ footer[role="contentinfo"]
       +full-width
   +respond-to(wide)
     div.sidebar
-      display: block
+      display: block !important
 
 
